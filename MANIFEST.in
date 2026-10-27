@@ -1,0 +1,4 @@
+include LICENSE
+recursive-include tests *.py *.md .env
+
+include scripts/verify_dists.py
