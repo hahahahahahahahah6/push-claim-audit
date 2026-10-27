@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "push-claim-audit"
+version = "0.1.0"
+description = "Offline static audit of documented device-notification delivery"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+[project.scripts]
+push-claim-audit = "push_claim_audit.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["push_claim_audit*"]
